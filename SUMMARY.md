@@ -7,3 +7,8 @@
 ## Methods
 
 * [Defining Methods](methods.md)
+
+## Part test
+
+* Article test
+
