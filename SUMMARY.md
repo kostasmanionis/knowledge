@@ -4,6 +4,7 @@
 
 * [Knowledge](README.md)
 * [Open source](open-source.md)
+* [Video](video.md)
 
 ## Code
 
