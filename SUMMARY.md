@@ -5,6 +5,7 @@
 * [Knowledge](README.md)
 * [Open source](open-source.md)
 * [Video](video.md)
+* [Random](random.md)
 
 ## Code
 
