@@ -8,6 +8,7 @@
 * [Random](random.md)
 * [Security](secutiry.md)
 * [Databases](databases.md)
+* [General web](general-web.md)
 
 ## Code
 
