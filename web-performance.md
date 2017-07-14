@@ -10,9 +10,13 @@
 
 #### [FLIP](https://aerotwist.com/blog/flip-your-animations/)
 
-`will-change` - https://github.com/Microsoft/monaco-editor/issues/426
+`will-change` - [https://github.com/Microsoft/monaco-editor/issues/426](https://github.com/Microsoft/monaco-editor/issues/426)
 
 #### Bundling
 
 [bundle-buddy](https://github.com/samccone/bundle-buddy) - Bundle Buddy is a tool to help you find source code duplication across your javascript chunks/splits. This enables you to fine tune code splitting parameters to reduce bundle invalidation rates as well as improve repeat page load performance \o/.
+
+
+
+[esbench](https://esbench.com/) - 
 
