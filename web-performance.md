@@ -18,10 +18,7 @@
 
 [esbench](https://esbench.com/) -
 
+#### Techniques
 
-
-[Skeleton screens](https://medium.com/@owencm/reactive-web-design-the-secret-to-building-web-apps-that-feel-amazing-b5cbfe9b7c50) - skeleton screens ensure that whenever the user taps any button or link, the page reacts immediately by transitioning the user to that new page and then _loading in content to that page _as the content becomes available.
-
-  
-
+[Skeleton screens](https://medium.com/@owencm/reactive-web-design-the-secret-to-building-web-apps-that-feel-amazing-b5cbfe9b7c50) - skeleton screens ensure that whenever the user taps any button or link, the page reacts immediately by transitioning the user to that new page and then \_loading in content to that page \_as the content becomes available.
 
