@@ -11,6 +11,7 @@
 * [General web](general-web.md)
 * [Servers](servers.md)
 * [CSS](css.md)
+* [LOL](lol.md)
 
 ## Code
 
