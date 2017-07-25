@@ -12,6 +12,7 @@
 * [Servers](servers.md)
 * [CSS](css.md)
 * [LOL](lol.md)
+* [ML/AI](mlai.md)
 
 ## Code
 
