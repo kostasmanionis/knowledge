@@ -22,3 +22,50 @@
 
 [Skeleton screens](https://medium.com/@owencm/reactive-web-design-the-secret-to-building-web-apps-that-feel-amazing-b5cbfe9b7c50) - skeleton screens ensure that whenever the user taps any button or link, the page reacts immediately by transitioning the user to that new page and then \_loading in content to that page \_as the content becomes available.
 
+#### Perceived performance
+
+Most of the time it's more important to make the app feel fast, rather than making it fast for real.
+
+Humans overestimate passive waits by 36%, per Richard Larson of MIT
+
+If your app is slow, and you focus on improving objective speed, it'll have to be 20% faster than before for the difference to even be noticeable. Which means around 30% is needed to make it feel like an impactful improvement.
+
+##### Managing user wait time
+
+* Respond immediately.
+* Let users know where they are in the waiting process; how much time is elapsed and how much is left to go.
+* Especially with long waits, keeping user attention focused on other things.
+* Render minimum viable layout, to get users out of a passive phase and into an interactive, usable page ASAP
+
+Postulated by business consultant David Maister but confirmed in several studies. If people don't have a sense of how much has elapsed and how much is left, the wait feels longer.
+
+##### Clicks
+
+Replace click events with mousedown \(and touchstart\) events. Click events actually fire not when the mouse button goes down, but when it comes back up again. So there's this gap when the user has clicked down, but the click event has yet to fire. We can load things when the mouse button goes down, and only display them when the click event fires as the user releases their mouse button. Gives about a 100-150ms head start.
+
+##### Progress bars
+
+Chris Harrison, a grad student at Carnegie Mellon found that progress bars with bands that animate in the opposite direction of the progress make the bar seem to fill faster. Same principle of being on a train, and another train is coming by the opposite direction, you look out the window to see the other train whizzing by, and it seems like you're going twice as fast.
+
+In a followup study he found that if those bands accellerate, the bar feels faster still. Can get that accelerating feel just by applying an ease-in to the animation. He found that they feel 12% faster.
+
+* Any action taking less than 1 or so seconds doesn't need an indicator at all, thought is uninterrupted. By showing an indicator here, you're taking their focus away from the action they just took and forcing them to focus on the fact that they have to wait for the app to respond. So you are in effect making the app feel \*slower\*.
+* 1-3 seconds displaying a progress bar is preferable. Don't need to include lots of written explanation as to what the app is doing, since this is within the window where most people still have patience.
+* 3-10s? Include an explanation as to what the app is doing. These durations can seem unreasonable if you don't explain to the user what is happening.
+
+**Spinners**
+
+Spinners have a pretty narrow use case. Don't want to use them if the expected wait time is less than 1s or so, because user flow won't be disrupted. Don't want to use them if the expected wait time is ~2.5s or up, since users need certainty as to where they are in the process. So you're looking at using them for loads between 1 - 2ish seconds.
+
+
+
+With long waits, up to and past 10 seconds. Sometimes you just have to distract users and keep them from focusing on how long the wait is. Games frequently give players tips to read during long loading screens. Tips require high levels of mental activity to read them, digest them, and integrate them into the player's existing play style. Thus holding attention. Uber's old screen when it was matching you with a driver was interactive. You could draw little light doodles in this creative play space. If you know the wait is going to be \*very\* long, give users something interactive to play with, because nothing holds attention like play.
+
+## At the end of the day, what matters is how it feels.
+
+If you have sufficient low hanging fruit to effect a 30% speedup in your app then by all means, do it. But many team don't have that luxury, and for them it makes a great deal of sense to focus on subjective performance measures before dedicating significant resources on physically making their product faster.
+
+
+
+
+
