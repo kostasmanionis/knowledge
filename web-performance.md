@@ -4,6 +4,12 @@
 
 A blackhole server can be used to route third party traffic through an endpoint that effectively makes requests disappear, recreating the effects of a complete outage. 72.66.115.13 provided by webpagetest
 
+> Because these types of assets block rendering, the browser will not paint anything to the screen until they have been downloaded \(and executed/parsed\). If the service that provides the file is offline, then that’s a lot of time that the browser has to spend_trying_to access the file, and during that period the user is left potentially looking at a blank screen. After a certain period has elapsed, the browser will eventually timeout and display the page without the asset\(s\) in question. How long is that certain period of time?
+>
+> It’s**1 minute and 20 seconds.**
+>
+> If you have any render-blocking, critical, third party assets hosted on an external domain, you run the risk of showing users a blank page for 1.3 minutes.
+
 #### Critical path css
 
 [Usus](https://github.com/gajus/usus) - Renders page using Chrome Debugging Protocol \(CDP\). Extracts CSS used to render the page. Renders HTML with the blocking CSS made asynchronous. Inlines the critical CSS.
