@@ -1,5 +1,9 @@
 ### Tools
 
+#### Blackhole servers
+
+A blackhole server can be used to route third party traffic through an endpoint that effectively makes requests disappear, recreating the effects of a complete outage. 72.66.115.13 provided by webpagetest
+
 #### Critical path css
 
 [Usus](https://github.com/gajus/usus) - Renders page using Chrome Debugging Protocol \(CDP\). Extracts CSS used to render the page. Renders HTML with the blocking CSS made asynchronous. Inlines the critical CSS.
@@ -57,15 +61,9 @@ In a followup study he found that if those bands accellerate, the bar feels fast
 
 Spinners have a pretty narrow use case. Don't want to use them if the expected wait time is less than 1s or so, because user flow won't be disrupted. Don't want to use them if the expected wait time is ~2.5s or up, since users need certainty as to where they are in the process. So you're looking at using them for loads between 1 - 2ish seconds.
 
-
-
 With long waits, up to and past 10 seconds. Sometimes you just have to distract users and keep them from focusing on how long the wait is. Games frequently give players tips to read during long loading screens. Tips require high levels of mental activity to read them, digest them, and integrate them into the player's existing play style. Thus holding attention. Uber's old screen when it was matching you with a driver was interactive. You could draw little light doodles in this creative play space. If you know the wait is going to be \*very\* long, give users something interactive to play with, because nothing holds attention like play.
 
 ## At the end of the day, what matters is how it feels.
 
 If you have sufficient low hanging fruit to effect a 30% speedup in your app then by all means, do it. But many team don't have that luxury, and for them it makes a great deal of sense to focus on subjective performance measures before dedicating significant resources on physically making their product faster.
-
-
-
-
 
