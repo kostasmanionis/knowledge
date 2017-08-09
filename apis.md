@@ -1,3 +1,7 @@
+### Browser
+
+[Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+
 ### JavaScript
 
 #### Factory functions
@@ -10,9 +14,7 @@ export default init(options) {
 }
 ```
 
- Helps you do clever optimisations inside the factory function.
-
-
+Helps you do clever optimisations inside the factory function.
 
 #### Webpack like configuration
 
