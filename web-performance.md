@@ -4,7 +4,7 @@
 
 A blackhole server can be used to route third party traffic through an endpoint that effectively makes requests disappear, recreating the effects of a complete outage. 72.66.115.13 provided by webpagetest
 
-> Because these types of assets block rendering, the browser will not paint anything to the screen until they have been downloaded \(and executed/parsed\). If the service that provides the file is offline, then that’s a lot of time that the browser has to spend_trying_to access the file, and during that period the user is left potentially looking at a blank screen. After a certain period has elapsed, the browser will eventually timeout and display the page without the asset\(s\) in question. How long is that certain period of time?
+> Because these types of assets block rendering, the browser will not paint anything to the screen until they have been downloaded \(and executed/parsed\). If the service that provides the file is offline, then that’s a lot of time that the browser has to spend\_trying\_to access the file, and during that period the user is left potentially looking at a blank screen. After a certain period has elapsed, the browser will eventually timeout and display the page without the asset\(s\) in question. How long is that certain period of time?
 >
 > It’s**1 minute and 20 seconds.**
 >
@@ -33,6 +33,8 @@ A blackhole server can be used to route third party traffic through an endpoint 
 [Skeleton screens](https://medium.com/@owencm/reactive-web-design-the-secret-to-building-web-apps-that-feel-amazing-b5cbfe9b7c50) - skeleton screens ensure that whenever the user taps any button or link, the page reacts immediately by transitioning the user to that new page and then \_loading in content to that page \_as the content becomes available.
 
 #### Perceived performance
+
+[Designing for mobile performance](http://www.awwwards.org/brainfood-mobile-performance-vol3.pdf)
 
 Most of the time it's more important to make the app feel fast, rather than making it fast for real.
 
