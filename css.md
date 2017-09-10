@@ -2,3 +2,5 @@
 
 [Prefers reduced motion](https://css-tricks.com/introduction-reduced-motion-media-query/)
 
+How FireFox stylo works
+

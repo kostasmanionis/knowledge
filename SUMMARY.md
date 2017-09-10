@@ -15,6 +15,7 @@
 * [ML/AI](mlai.md)
 * [Graphics](graphics.md)
 * [Animations](animations.md)
+* [Browsers](browsers.md)
 
 ## Code
 
