@@ -16,6 +16,7 @@
 * [Graphics](graphics.md)
 * [Animations](animations.md)
 * [Browsers](browsers.md)
+* [Applications](applications.md)
 
 ## Code
 
