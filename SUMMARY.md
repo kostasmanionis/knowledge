@@ -17,6 +17,7 @@
 * [Animations](animations.md)
 * [Browsers](browsers.md)
 * [Applications](applications.md)
+* [Data Structures](data-structures.md)
 
 ## Code
 
