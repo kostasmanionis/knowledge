@@ -75,11 +75,15 @@ With long waits, up to and past 10 seconds. Sometimes you just have to distract 
 
 If you have sufficient low hanging fruit to effect a 30% speedup in your app then by all means, do it. But many team don't have that luxury, and for them it makes a great deal of sense to focus on subjective performance measures before dedicating significant resources on physically making their product faster.
 
-
-
 ### React performance
 
 [Using should component update](https://medium.com/@alexandereardon/performance-optimisations-for-react-applications-b453c597b191)
+
+
+
+### Images
+
+[Images guide](https://images.guide/) - long ass book about image optimization.
 
 
 
