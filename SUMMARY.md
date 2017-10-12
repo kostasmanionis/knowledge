@@ -18,6 +18,7 @@
 * [Browsers](browsers.md)
 * [Applications](applications.md)
 * [Data Structures](data-structures.md)
+* [Web Components](web-components.md)
 
 ## Code
 
