@@ -79,11 +79,9 @@ If you have sufficient low hanging fruit to effect a 30% speedup in your app the
 
 [Using should component update](https://medium.com/@alexandereardon/performance-optimisations-for-react-applications-b453c597b191)
 
-
-
 ### Images
 
 [Images guide](https://images.guide/) - long ass book about image optimization.
 
-
+Sending data in a comment might be the fastest way to do it, need to benchmark parsers.
 
