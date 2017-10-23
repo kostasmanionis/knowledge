@@ -79,6 +79,8 @@ If you have sufficient low hanging fruit to effect a 30% speedup in your app the
 
 [Using should component update](https://medium.com/@alexandereardon/performance-optimisations-for-react-applications-b453c597b191)
 
+[Benchmarking server side applications](https://davidea.st/articles/measuring-server-side-rendering-performance-is-tricky)
+
 ### Images
 
 [Images guide](https://images.guide/) - long ass book about image optimization.
