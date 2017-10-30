@@ -20,6 +20,7 @@
 * [Data Structures](data-structures.md)
 * [Web Components](web-components.md)
 * [Soft skills](soft-skills.md)
+* [UI](ui.md)
 
 ## Code
 
