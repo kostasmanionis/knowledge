@@ -87,3 +87,9 @@ If you have sufficient low hanging fruit to effect a 30% speedup in your app the
 
 Sending data in a comment might be the fastest way to do it, need to benchmark parsers.
 
+## Browsers
+
+### Chrome
+
+[User experience report](https://developers.google.com/web/tools/chrome-user-experience-report/)
+
