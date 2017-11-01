@@ -18,3 +18,7 @@ A simple JavaScript image compressor. Uses the Browser's native [canvas.toBlob](
 
 [Writing an automatic code formatter](http://journal.stuffwithstuff.com/2015/09/08/the-hardest-program-ive-ever-written/?sort)
 
+### Data transfer
+
+[Error correcting codes](https://monades.roperzh.com/error-correction-reed-solomon/)
+
