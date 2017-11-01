@@ -1,2 +1,4 @@
 [State machines are great for managing UI state](http://krasimirtsonev.com/blog/article/managing-state-in-javascript-with-state-machines-stent)
 
+[React and finite state machines](https://www.youtube.com/watch?v=MkdV2-U16tc)
+
