@@ -91,6 +91,8 @@ Sending data in a comment might be the fastest way to do it, need to benchmark p
 
 ### Chrome
 
+[JavaScript startup performance](https://medium.com/reloading/javascript-start-up-performance-69200f43b201)
+
 [User experience report](https://developers.google.com/web/tools/chrome-user-experience-report/) - big query data set for getting performance metrics for certain websites.
 
 ## Case studies
