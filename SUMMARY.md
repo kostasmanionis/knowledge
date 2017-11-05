@@ -19,7 +19,7 @@
 * [Applications](applications.md)
 * [Data Structures](data-structures.md)
 * [Web Components](web-components.md)
-* [Soft skills](soft-skills.md)
+* [Skillz](soft-skills.md)
 * [UI](ui.md)
 
 ## Code
