@@ -6,5 +6,5 @@
 
 [Learn X in Y minutes](https://learnxinyminutes.com/)
 
-
+[Flow type cheatsheet](https://www.saltycrane.com/flow-type-cheat-sheet/latest/)
 
