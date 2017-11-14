@@ -22,3 +22,9 @@ A simple JavaScript image compressor. Uses the Browser's native [canvas.toBlob](
 
 [Error correcting codes](https://monades.roperzh.com/error-correction-reed-solomon/)
 
+### Text
+
+[5 things about unicode](https://gojko.net/2017/11/07/five-things-about-unicode.html)
+
+
+
