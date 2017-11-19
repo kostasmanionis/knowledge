@@ -95,7 +95,9 @@ Sending data in a comment might be the fastest way to do it, need to benchmark p
 
 [User experience report](https://developers.google.com/web/tools/chrome-user-experience-report/) - big query data set for getting performance metrics for certain websites.
 
+[The cost of JS](https://medium.com/dev-channel/the-cost-of-javascript-84009f51e99e) - points out some common performance problems that browsers have when loading up js files.
+
 ## Case studies
 
-[Treebo](https://medium.com/dev-channel/treebo-a-react-and-preact-progressive-web-app-performance-case-study-5e4f450d5299)
+[Treebo](https://medium.com/dev-channel/treebo-a-react-and-preact-progressive-web-app-performance-case-study-5e4f450d5299) - great study of a fast web app.
 
