@@ -6,3 +6,5 @@ Find out about ssl pinning.
 
 [A brief explanation about generating password hashes.](http://www.blinkingcaret.com/2017/11/15/things-wanted-know-storing-passwords-afraid-ask/)
 
+[A brief explanation of https](http://www.blinkingcaret.com/2017/01/18/brief-ish-explanation-of-how-https-works/) - unread
+
