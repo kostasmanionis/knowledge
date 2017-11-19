@@ -101,3 +101,7 @@ Sending data in a comment might be the fastest way to do it, need to benchmark p
 
 [Treebo](https://medium.com/dev-channel/treebo-a-react-and-preact-progressive-web-app-performance-case-study-5e4f450d5299) - great study of a fast web app.
 
+## CSS
+
+[Reducing the size of css class names](https://medium.freecodecamp.org/reducing-css-bundle-size-70-by-cutting-the-class-names-and-using-scope-isolation-625440de600b)
+
