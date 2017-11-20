@@ -22,6 +22,8 @@ A blackhole server can be used to route third party traffic through an endpoint 
 
 `will-change` - [https://github.com/Microsoft/monaco-editor/issues/426](https://github.com/Microsoft/monaco-editor/issues/426)
 
+[120fps](https://dassur.ma/things/120fps/)
+
 #### Bundling
 
 [bundle-buddy](https://github.com/samccone/bundle-buddy) - Bundle Buddy is a tool to help you find source code duplication across your javascript chunks/splits. This enables you to fine tune code splitting parameters to reduce bundle invalidation rates as well as improve repeat page load performance \o/.
