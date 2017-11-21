@@ -12,6 +12,8 @@ hyperHTML - great virtual dom
 
 [svg lazyload jpeg](https://twitter.com/mikaelainalem/status/918213244954861569)
 
+[Code duplication on github](https://blog.acolyer.org/2017/11/20/dejavu-a-map-of-code-duplicates-on-github/)
+
 #### xkeshi/image-compressor
 
 A simple JavaScript image compressor. Uses the Browser's native [canvas.toBlob](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob) API to do the compression work. General use this to precompress a client image file before upload it.
@@ -25,6 +27,4 @@ A simple JavaScript image compressor. Uses the Browser's native [canvas.toBlob](
 ### Text
 
 [5 things about unicode](https://gojko.net/2017/11/07/five-things-about-unicode.html)
-
-
 
