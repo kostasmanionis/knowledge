@@ -109,3 +109,9 @@ Sending data in a comment might be the fastest way to do it, need to benchmark p
 
 [Reducing the size of css class names](https://medium.freecodecamp.org/reducing-css-bundle-size-70-by-cutting-the-class-names-and-using-scope-isolation-625440de600b)
 
+## Networking
+
+[Use the network information api to figure out what kind of an connection the user has](https://googlechrome.github.io/samples/network-information/)
+
+
+
