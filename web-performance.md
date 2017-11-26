@@ -91,6 +91,10 @@ Sending data in a comment might be the fastest way to do it, need to benchmark p
 
 ## Browsers
 
+### Hacks
+
+Messing with the priority queue![](/assets/Screen Shot 2017-11-26 at 19.29.34.png)
+
 ### Chrome
 
 [JavaScript startup performance](https://medium.com/reloading/javascript-start-up-performance-69200f43b201)
@@ -112,6 +116,4 @@ Sending data in a comment might be the fastest way to do it, need to benchmark p
 ## Networking
 
 [Use the network information api to figure out what kind of an connection the user has](https://googlechrome.github.io/samples/network-information/)
-
-
 
