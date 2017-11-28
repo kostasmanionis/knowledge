@@ -21,6 +21,7 @@
 * [Web Components](web-components.md)
 * [Skillz](soft-skills.md)
 * [UI](ui.md)
+* [General programming](general-programming.md)
 
 ## Code
 
