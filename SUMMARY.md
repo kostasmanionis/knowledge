@@ -22,6 +22,7 @@
 * [Skillz](soft-skills.md)
 * [UI](ui.md)
 * [General programming](general-programming.md)
+* [JavaScript](javascript.md)
 
 ## Code
 
