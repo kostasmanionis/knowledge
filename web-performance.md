@@ -117,3 +117,5 @@ Messing with the priority queue![](/assets/Screen Shot 2017-11-26 at 19.29.34.pn
 
 [Use the network information api to figure out what kind of an connection the user has](https://googlechrome.github.io/samples/network-information/)
 
+[HTTP2 - what no one is telling you](https://www.youtube.com/watch?v=CkFEoZwWbGQ)
+
