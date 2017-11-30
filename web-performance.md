@@ -109,6 +109,8 @@ Messing with the priority queue![](/assets/Screen Shot 2017-11-26 at 19.29.34.pn
 
 [Can you afford a performance budget](https://infrequently.org/2017/10/can-you-afford-it-real-world-web-performance-budgets/)
 
+[Pinterest](https://medium.com/@addyosmani/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154)
+
 ## CSS
 
 [Reducing the size of css class names](https://medium.freecodecamp.org/reducing-css-bundle-size-70-by-cutting-the-class-names-and-using-scope-isolation-625440de600b)
