@@ -1,8 +1,14 @@
 [Tilde](https://www.joezimjs.com/javascript/great-mystery-of-the-tilde/)
 
-### Garbage collection
+## Garbage collection
+
+### General Introduction
+
+#### V8
 
 The garbage collector is not one single action. Memory is divided up into two areas: the young generation and the old generation.
+
+V8 partitions its managed heap into generations where objects are initially allocated in the “nursery” of the young generation. Upon surviving a garbage collection, objects are copied into the intermediate generation, which is still part of the young generation. After surviving another garbage collection, these objects are moved into the old generation. V8 implements two garbage collectors: one that frequently collects the young generation, and one that collects the full heap including both the young and old generation. Old-to-young generation references are roots for the young generation garbage collection. These references are recorded to provide efficient root identification and reference updates when objects are moved.
 
 ![fill](./assets/js-gc-gen.png)
 
@@ -26,6 +32,14 @@ Memory is compacted throughout garbage collection. The empty space left in pages
 
 The garbage collector then is a program running within the browser that frees up memory used by unreachable data. It assumes that all unreachable data is not needed and can be discarded. Problems with memory occur when we fill it up with data we don't need, or when data never becomes unreachable and memory is not freed. These problems are called memory bloat and memory leaks.
 
-Common sources of leakz
-
 [Stolen from Katie Fenn](http://www.katiefenn.co.uk/memory-dont-forget-to-take-out-the-garbage/)
+
+##### More info
+
+[Orinoco: young generation garbage collection](https://v8project.blogspot.lt/2017/11/orinoco-parallel-scavenger.html)
+
+[Jank Busters Part One](https://v8project.blogspot.lt/2015/10/jank-busters-part-one.html)
+
+[Jank Busters Part Two](https://v8project.blogspot.lt/2016/04/jank-busters-part-two-orinoco.html)
+
+[Fall cleaning: Optimizing V8 memory consumption](https://v8project.blogspot.lt/2016/10/fall-cleaning-optimizing-v8-memory.html)
