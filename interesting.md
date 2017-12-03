@@ -1,0 +1,1 @@
+[How the team at Lucidchart converted 600k lines of code to typescript during a hackathon.](https://www.lucidchart.com/techblog/2017/11/16/converting-600k-lines-to-typescript-in-72-hours/)
