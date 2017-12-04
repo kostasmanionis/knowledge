@@ -1,5 +1,9 @@
 # Web browsers
 
+### General
+
+[Browser rendering path](https://fabianstiehle.com/render-path) - an introduction on how the browser rendering path works.
+
 ### Firefox
 
 #### **Quantum CSS engine**
