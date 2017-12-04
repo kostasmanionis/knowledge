@@ -1,4 +1,4 @@
-### Tools
+## Tools
 
 #### Blackhole servers
 
@@ -88,6 +88,14 @@ If you have sufficient low hanging fruit to effect a 30% speedup in your app the
 [Images guide](https://images.guide/) - long ass book about image optimization.
 
 Sending data in a comment might be the fastest way to do it, need to benchmark parsers.
+
+### GIF
+
+[Safari TL ships an image tag that let's you load mp4 as images. A superb alternative to gifs.
+](https://calendar.perfplanet.com/2017/animated-gif-without-the-gif/)
+
+### Metrics
+[How Wiki Media foundation tracks performance regressions](https://calendar.perfplanet.com/2017/automating-web-performance-regression-alerts/)
 
 ## Browsers
 
