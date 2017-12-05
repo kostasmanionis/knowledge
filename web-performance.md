@@ -87,6 +87,20 @@ If you have sufficient low hanging fruit to effect a 30% speedup in your app the
 
 [Images guide](https://images.guide/) - long ass book about image optimization.
 
+[Image decoding](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/MbXp16hQclY/bQjegyrbAgAJ)
+
+```html
+<!-- the decode for this image may be deferred -->
+<img decoding=async src="...">
+
+<!-- if possible the decode for this image should not be deferred -->
+<img decoding=sync src="...">
+
+<!-- the browser is free to do what it feels is best for the user -->
+<img decoding=auto src="...">
+```
+
+
 Sending data in a comment might be the fastest way to do it, need to benchmark parsers.
 
 ### GIF
