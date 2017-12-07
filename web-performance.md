@@ -143,3 +143,5 @@ Messing with the priority queue![](/assets/Screen Shot 2017-11-26 at 19.29.34.pn
 
 [HTTP2 - what no one is telling you](https://www.youtube.com/watch?v=CkFEoZwWbGQ)
 
+[Using HAR for performance benchmarking](https://blog.201-created.com/you-can-only-change-what-you-can-measure-6be8826503a7)
+
