@@ -4,3 +4,4 @@
 
 https://www.packtpub.com/big-data-and-business-intelligence/python-deep-learning
 
+[Image restoration](https://dmitryulyanov.github.io/deep_image_prior)
