@@ -94,6 +94,8 @@ If you have sufficient low hanging fruit to effect a 30% speedup in your app the
 
 [Image decoding](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/MbXp16hQclY/bQjegyrbAgAJ)
 
+[Using SVG as image placeholders](https://medium.freecodecamp.org/using-svg-as-placeholders-more-image-loading-techniques-bed1b810ab2c)
+
 ```html
 <!-- the decode for this image may be deferred -->
 <img decoding=async src="...">
