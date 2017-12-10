@@ -77,12 +77,17 @@ With long waits, up to and past 10 seconds. Sometimes you just have to distract 
 
 If you have sufficient low hanging fruit to effect a 30% speedup in your app then by all means, do it. But many team don't have that luxury, and for them it makes a great deal of sense to focus on subjective performance measures before dedicating significant resources on physically making their product faster.
 
+## Frameworks
+
 ### React performance
 
 [Using should component update](https://medium.com/@alexandereardon/performance-optimisations-for-react-applications-b453c597b191)
 
 [Benchmarking server side applications](https://davidea.st/articles/measuring-server-side-rendering-performance-is-tricky)
 
+### Ember
+
+[Glimmer binary](https://engineering.linkedin.com/blog/2017/12/the-glimmer-binary-experience)
 ### Images
 
 [Images guide](https://images.guide/) - long ass book about image optimization.
@@ -144,4 +149,3 @@ Messing with the priority queue![](/assets/Screen Shot 2017-11-26 at 19.29.34.pn
 [HTTP2 - what no one is telling you](https://www.youtube.com/watch?v=CkFEoZwWbGQ)
 
 [Using HAR for performance benchmarking](https://blog.201-created.com/you-can-only-change-what-you-can-measure-6be8826503a7)
-
