@@ -120,6 +120,8 @@ Sending data in a comment might be the fastest way to do it, need to benchmark p
 
 ## Browsers
 
+[Fastdom - Batch dom read/writes](https://github.com/wilsonpage/fastdom)
+
 ### Hacks
 
 Messing with the priority queue![](/assets/Screen Shot 2017-11-26 at 19.29.34.png)
