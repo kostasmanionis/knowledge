@@ -8,3 +8,4 @@ Find out about ssl pinning.
 
 [A brief explanation of https](http://www.blinkingcaret.com/2017/01/18/brief-ish-explanation-of-how-https-works/) - unread
 
+[Putting the helmet on – Securing your Express app](https://www.twilio.com/blog/2017/11/securing-your-express-app.html)
