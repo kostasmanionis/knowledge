@@ -1,1 +1,3 @@
 [How the team at Lucidchart converted 600k lines of code to typescript during a hackathon.](https://www.lucidchart.com/techblog/2017/11/16/converting-600k-lines-to-typescript-in-72-hours/)
+
+[Why TLS 1.3 isn't in browsers yet](https://blog.cloudflare.com/why-tls-1-3-isnt-in-browsers-yet/) - An interesting read on how hard it is to design long lasting protocols for the web. Demonstrates a phenomenon in protocol design called ossification. Implementers implement to the reality of the protocol, not the intention of the protocol’s designer or the text of the specification. In complex ecosystems with multiple implementers, unused joints rust shut.
