@@ -9,3 +9,7 @@ Find out about ssl pinning.
 [A brief explanation of https](http://www.blinkingcaret.com/2017/01/18/brief-ish-explanation-of-how-https-works/) - unread
 
 [Putting the helmet on – Securing your Express app](https://www.twilio.com/blog/2017/11/securing-your-express-app.html)
+
+[Why blindly add dependencies is dangerous](https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5)
+
+[Content Security Policy](https://developers.google.com/web/fundamentals/security/csp/)
