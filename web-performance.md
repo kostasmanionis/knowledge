@@ -1,10 +1,12 @@
 ## Tools
 
+[Google H2 auto push](https://github.com/google/node-h2-auto-push) - This project is for automating server push and getting rid of the need for manual configurations from service developers. It is meant as a helper library for building middlewares for various Node.js web servers, such as Express, fastify, etc.
+
 #### Blackhole servers
 
 A blackhole server can be used to route third party traffic through an endpoint that effectively makes requests disappear, recreating the effects of a complete outage. 72.66.115.13 provided by webpagetest
 
-> Because these types of assets block rendering, the browser will not paint anything to the screen until they have been downloaded \(and executed/parsed\). If the service that provides the file is offline, then that’s a lot of time that the browser has to spend\_trying\_to access the file, and during that period the user is left potentially looking at a blank screen. After a certain period has elapsed, the browser will eventually timeout and display the page without the asset\(s\) in question. How long is that certain period of time?
+> Because these types of assets block rendering, the browser will not paint anything to the screen until they have been downloaded \(and executed/parsed\). If the service that provides the file is offline, then that’s a lot of time that the browser has to spend_trying_to access the file, and during that period the user is left potentially looking at a blank screen. After a certain period has elapsed, the browser will eventually timeout and display the page without the asset\(s\) in question. How long is that certain period of time?
 >
 > It’s**1 minute and 20 seconds.**
 >
@@ -88,6 +90,7 @@ If you have sufficient low hanging fruit to effect a 30% speedup in your app the
 ### Ember
 
 [Glimmer binary](https://engineering.linkedin.com/blog/2017/12/the-glimmer-binary-experience)
+
 ### Images
 
 [Images guide](https://images.guide/) - long ass book about image optimization.
@@ -107,7 +110,6 @@ If you have sufficient low hanging fruit to effect a 30% speedup in your app the
 <img decoding=auto src="...">
 ```
 
-
 Sending data in a comment might be the fastest way to do it, need to benchmark parsers.
 
 ### GIF
@@ -116,6 +118,7 @@ Sending data in a comment might be the fastest way to do it, need to benchmark p
 ](https://calendar.perfplanet.com/2017/animated-gif-without-the-gif/)
 
 ### Metrics
+
 [How Wiki Media foundation tracks performance regressions](https://calendar.perfplanet.com/2017/automating-web-performance-regression-alerts/)
 
 ## Browsers
@@ -141,6 +144,8 @@ Messing with the priority queue![](/assets/Screen Shot 2017-11-26 at 19.29.34.pn
 [Can you afford a performance budget](https://infrequently.org/2017/10/can-you-afford-it-real-world-web-performance-budgets/)
 
 [Pinterest](https://medium.com/@addyosmani/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154)
+
+[Tinder](https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0)
 
 ## CSS
 

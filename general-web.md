@@ -2,7 +2,7 @@ Use native form validation!
 
 [Chrome about e-commerce sites, some great stuff there.](https://www.youtube.com/watch?v=F2GRAYyTF9Y) - might be useful for 1stdibs.com.
 
-### When to ww
+### When to www
 
 The only technical reason is that if you use`http://example.com`, requests to subdomains \(eg`static.example.com`\) will be sent the cookies sent on the main domain. This is seen as a disadvantage because you might want to use a subdomain for serving static content, and the cookies add more overhead.
 
@@ -14,3 +14,6 @@ Also with HTTP/2, using multiple subdomains \(aka “domain sharding”\) is act
 
 [Why use www](http://www.yes-www.org/why-use-www/)
 
+### Infrastructure
+
+[React repository infrastructure](https://reactjs.org/blog/2017/12/15/improving-the-repository-infrastructure.html)
