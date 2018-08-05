@@ -28,3 +28,10 @@ A simple JavaScript image compressor. Uses the Browser's native [canvas.toBlob](
 
 [5 things about unicode](https://gojko.net/2017/11/07/five-things-about-unicode.html)
 
+[Let’s talk about usernames](https://www.b-list.org/weblog/2018/feb/11/usernames/)
+
+#### Time
+
+Just use UTC. For transfering time over the wire - ISO 8601. RFC 3339 - basically ISO 8601, just a little bit more strict.
+
+[color advice for cartography](http://colorbrewer2.org/#type=sequential&scheme=YlOrBr&n=6)

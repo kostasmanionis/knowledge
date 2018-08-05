@@ -34,6 +34,8 @@ A blackhole server can be used to route third party traffic through an endpoint 
 
 #### Techniques
 
+[Use `this.Reflektive` to feature detect 2015](https://itnext.io/a-bloatless-web-d4f811c7991b)
+
 [Skeleton screens](https://medium.com/@owencm/reactive-web-design-the-secret-to-building-web-apps-that-feel-amazing-b5cbfe9b7c50) - skeleton screens ensure that whenever the user taps any button or link, the page reacts immediately by transitioning the user to that new page and then \_loading in content to that page \_as the content becomes available.
 
 #### Perceived performance
@@ -78,6 +80,14 @@ With long waits, up to and past 10 seconds. Sometimes you just have to distract 
 ## At the end of the day, what matters is how it feels.
 
 If you have sufficient low hanging fruit to effect a 30% speedup in your app then by all means, do it. But many team don't have that luxury, and for them it makes a great deal of sense to focus on subjective performance measures before dedicating significant resources on physically making their product faster.
+
+## Above the fold size
+
+Due to how TCP estimates the capacity of a connection (i.e. TCP Slow Start), a new TCP connection cannot immediately use the full available bandwidth between the client and the server. Because of this, the server can send up to 10 TCP packets on a new connection (~14KB) in first roundtrip, and then it must wait for client to acknowledge this data before it can grow its congestion window and proceed to deliver more data.
+
+Also, it is important to note that the 10 packet (IW10) limit is a recent update to the TCP standard: you should ensure that your server is upgraded to latest version to take advantage of this change. Otherwise, the limit will likely be 3-4 packets!
+
+Due to this TCP behavior, it is important to optimize your content to minimize the number of roundtrips required to deliver the necessary data to perform the first render of the page. Ideally, the ATF content should fit under 98KB - this allows the browser to paint the page after just three roundtrips to have plenty time budget for server response latency and client rendering.
 
 ## Frameworks
 

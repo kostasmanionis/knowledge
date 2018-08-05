@@ -12,6 +12,12 @@ Find out about ssl pinning.
 
 [Why blindly add dependencies is dangerous](https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5)
 
-[Securing form on a website](https://hackernoon.com/part-2-how-to-stop-me-harvesting-credit-card-numbers-and-passwords-from-your-site-844f739659b9)
+[Securing forms on a website](https://hackernoon.com/part-2-how-to-stop-me-harvesting-credit-card-numbers-and-passwords-from-your-site-844f739659b9)
 
 [Content Security Policy](https://developers.google.com/web/fundamentals/security/csp/)
+
+[Feature policy](https://developers.google.com/web/updates/2018/06/feature-policy)
+
+[Homographic attacks](https://dev.to/loganmeetsworld/homographs-attack--5a1p)
+
+[Talking to Redis, Memcached, and Elasticsearch](https://bou.ke/blog/hacking-developers/) - Running commands and getting results using DNS rebinding.

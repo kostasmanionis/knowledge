@@ -1,5 +1,3 @@
-
-
 ### Streaming responses
 
 Browsers have a buffer limit before rendering chunked responses, in most cases it's [~1kb](https://stackoverflow.com/questions/16909227/using-transfer-encoding-chunked-how-much-data-must-be-sent-before-browsers-s/16909228#16909228).
@@ -22,3 +20,6 @@ Buffering
 
 [Backpressure in NodeJS](http://engineering.voxer.com/2013/09/16/backpressure-in-nodejs/)
 
+### Chaos testing
+
+[How Netflix uses chaos testin in production](https://www.youtube.com/watch?time_continue=1&v=3WRVgC8SiGc) - Deliberalty failing services to see how fallbacks work.

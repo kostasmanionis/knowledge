@@ -17,3 +17,5 @@ Also with HTTP/2, using multiple subdomains \(aka “domain sharding”\) is act
 ### Infrastructure
 
 [React repository infrastructure](https://reactjs.org/blog/2017/12/15/improving-the-repository-infrastructure.html)
+
+[About why it's worth using proper html and css](https://alistapart.com/article/cult-of-the-complex)

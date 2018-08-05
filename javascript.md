@@ -43,3 +43,65 @@ The garbage collector then is a program running within the browser that frees up
 [Jank Busters Part Two](https://v8project.blogspot.lt/2016/04/jank-busters-part-two-orinoco.html)
 
 [Fall cleaning: Optimizing V8 memory consumption](https://v8project.blogspot.lt/2016/10/fall-cleaning-optimizing-v8-memory.html)
+
+#### Decorators
+
+Great for binding class properties!
+
+```javascript
+class Form extends Component {
+  value = ""
+
+  @bound
+  submit() {...} // as function declaration, on prototype
+
+  @bound
+  change() {...} // as function declaration, on prototype
+
+  change = () => {...} // as function assignment, instance
+
+  render() {
+    <div>
+      <input onChange={this.change} value={this.value} type="text" />
+      <button onClick={this.submit}>Click</button>
+    </div>
+  }
+}
+```
+
+Validations too!
+
+```javascript
+const stringValidator = target => {
+  const { descriptor } = target;
+  const value = descriptor.initializer();
+
+  const proxy = new Proxy({}, {
+    set(proxyTarget, key, proxyValue) {
+      if (typeof proxyValue !== 'string') {
+        throw new TypeError('value must be a string');
+      }
+
+      return true;
+    }
+  })
+
+  const initializer = () => {
+    proxy[name] = value;
+    return proxy[name];
+  }
+
+  return {
+    ...target,
+    initializer
+  }
+}
+
+class Book {
+  @stringValidator
+  bookOne = 'The Trial'; // all fine
+
+  @stringValidator
+  bookTwo = 1984; // throws a TypeError
+}
+```
