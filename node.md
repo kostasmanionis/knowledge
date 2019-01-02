@@ -9,3 +9,7 @@
 Debugging the code in 10.0.0 is super duper easy, now we have trace events that create a manual tracing to a category and when enabled pass the diagnostic code to a file which can be read by google chrome dev-tools. No more cli to be used for creating traces for code, now we have javascript API that helps enabling/disabling trace events dynamically.
 
 [API](https://nodejs.org/api/tracing.html)
+
+[V8 PERF](https://github.com/thlorenz/v8-perf) - Repo about V8 performance
+
+[Why the New V8 is so Damn Fast](https://nodesource.com/blog/why-the-new-v8-is-so-damn-fast) - Has some great tools about debugging node deoptimizations

@@ -1,5 +1,7 @@
 [Tilde](https://www.joezimjs.com/javascript/great-mystery-of-the-tilde/)
 
+[Javascript wormholes](https://www.nearform.com/blog/wormholes-in-javascript/?utm_source=ponyfoo+weekly&utm_medium=email&utm_campaign=131)
+
 ## Garbage collection
 
 ### General Introduction
@@ -105,3 +107,14 @@ class Book {
   bookTwo = 1984; // throws a TypeError
 }
 ```
+
+[Implementing equality in javascript is difficult](https://medium.com/@modernserf/the-tyranny-of-triple-equals-de46cc0c5723)
+
+However, there’s a number of implementation difficulties and edge cases that complicate this:
+
+ - How do you compare objects with circular references?
+ - If objects have identical properties, but different prototypes, are they equal?
+ - How should get/set properties be handled?
+ - Should objects compare their non-enumerable properties?
+ - Keys in an object are ordered — i.e. Object.keys({ x: 1, y: 2 }) gives different results than Object.keys({ y: 2, x: 1 }) -- should that matter for structural equality?
+ - How should you handle private properties, or methods that use closures to simulate this?
