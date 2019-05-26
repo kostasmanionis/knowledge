@@ -50,10 +50,10 @@ If your app is slow, and you focus on improving objective speed, it'll have to b
 
 ##### Managing user wait time
 
-* Respond immediately.
-* Let users know where they are in the waiting process; how much time is elapsed and how much is left to go.
-* Especially with long waits, keeping user attention focused on other things.
-* Render minimum viable layout, to get users out of a passive phase and into an interactive, usable page ASAP
+- Respond immediately.
+- Let users know where they are in the waiting process; how much time is elapsed and how much is left to go.
+- Especially with long waits, keeping user attention focused on other things.
+- Render minimum viable layout, to get users out of a passive phase and into an interactive, usable page ASAP
 
 Postulated by business consultant David Maister but confirmed in several studies. If people don't have a sense of how much has elapsed and how much is left, the wait feels longer.
 
@@ -67,9 +67,9 @@ Chris Harrison, a grad student at Carnegie Mellon found that progress bars with 
 
 In a followup study he found that if those bands accellerate, the bar feels faster still. Can get that accelerating feel just by applying an ease-in to the animation. He found that they feel 12% faster.
 
-* Any action taking less than 1 or so seconds doesn't need an indicator at all, thought is uninterrupted. By showing an indicator here, you're taking their focus away from the action they just took and forcing them to focus on the fact that they have to wait for the app to respond. So you are in effect making the app feel \*slower\*.
-* 1-3 seconds displaying a progress bar is preferable. Don't need to include lots of written explanation as to what the app is doing, since this is within the window where most people still have patience.
-* 3-10s? Include an explanation as to what the app is doing. These durations can seem unreasonable if you don't explain to the user what is happening.
+- Any action taking less than 1 or so seconds doesn't need an indicator at all, thought is uninterrupted. By showing an indicator here, you're taking their focus away from the action they just took and forcing them to focus on the fact that they have to wait for the app to respond. So you are in effect making the app feel \*slower\*.
+- 1-3 seconds displaying a progress bar is preferable. Don't need to include lots of written explanation as to what the app is doing, since this is within the window where most people still have patience.
+- 3-10s? Include an explanation as to what the app is doing. These durations can seem unreasonable if you don't explain to the user what is happening.
 
 **Spinners**
 
@@ -97,6 +97,10 @@ Due to this TCP behavior, it is important to optimize your content to minimize t
 
 [Benchmarking server side applications](https://davidea.st/articles/measuring-server-side-rendering-performance-is-tricky)
 
+### Preact performance
+
+[Parial hydration with Preact - may apply to React too](https://medium.com/spring-media-techblog/how-we-achieved-the-best-web-performance-with-partial-hydration-20fab9c808d5)
+
 ### Ember
 
 [Glimmer binary](https://engineering.linkedin.com/blog/2017/12/the-glimmer-binary-experience)
@@ -109,15 +113,17 @@ Due to this TCP behavior, it is important to optimize your content to minimize t
 
 [Using SVG as image placeholders](https://medium.freecodecamp.org/using-svg-as-placeholders-more-image-loading-techniques-bed1b810ab2c)
 
+[Cloudflare progressive image streaming](https://blog.cloudflare.com/parallel-streaming-of-progressive-images/)
+
 ```html
 <!-- the decode for this image may be deferred -->
-<img decoding=async src="...">
+<img decoding="async" src="..." />
 
 <!-- if possible the decode for this image should not be deferred -->
-<img decoding=sync src="...">
+<img decoding="sync" src="..." />
 
 <!-- the browser is free to do what it feels is best for the user -->
-<img decoding=auto src="...">
+<img decoding="auto" src="..." />
 ```
 
 [Chrome proposal for lazyloading images and iframes](https://css-tricks.com/a-native-lazy-load-for-the-web-platform/)
@@ -147,11 +153,15 @@ Sending data in a comment might be the fastest way to do it, need to benchmark p
 
 [An analysis of Chromium's paint timing metrics](https://speedcurve.com/blog/an-analysis-of-chromiums-paint-timing-metrics/)
 
+[Resource timing](https://nicj.net/resourcetiming-in-practice)
+
 ### Hacks
 
 Messing with the priority queue![](/assets/Screen Shot 2017-11-26 at 19.29.34.png)
 
 ### Chrome
+
+[Loading priority in Chrome](https://addyosmani.com/blog/script-priorities/)
 
 [JavaScript startup performance](https://medium.com/reloading/javascript-start-up-performance-69200f43b201)
 
@@ -171,6 +181,10 @@ Messing with the priority queue![](/assets/Screen Shot 2017-11-26 at 19.29.34.pn
 
 [Start Performance Budgeting](https://medium.com/@addyosmani/start-performance-budgeting-dabde04cf6a3)
 
+[How to make a performance budget](http://v3.danielmall.com/articles/how-to-make-a-performance-budget/)
+
+[Performance budgets that stick](https://timkadlec.com/remembers/2019-03-07-performance-budgets-that-stick/)
+
 ## CSS
 
 [Reducing the size of css class names](https://medium.freecodecamp.org/reducing-css-bundle-size-70-by-cutting-the-class-names-and-using-scope-isolation-625440de600b)
@@ -178,6 +192,10 @@ Messing with the priority queue![](/assets/Screen Shot 2017-11-26 at 19.29.34.pn
 [Using the Cache API to cache inlines styles](https://www.filamentgroup.com/lab/inlining-cache.html?utm_source=ponyfoo+weekly&utm_medium=email&utm_campaign=142)
 
 [Loading fonts using JS](https://www.filamentgroup.com/lab/js-web-fonts.html)
+
+[Gotchas of using preload on fonts](https://andydavies.me/blog/2019/02/12/preloading-fonts-and-the-puzzle-of-priorities/)
+
+[Variable fonts](https://matthewstrom.com/writing/variable-fonts.html)
 
 ### Split css files by media queries
 
@@ -197,7 +215,9 @@ Messing with the priority queue![](/assets/Screen Shot 2017-11-26 at 19.29.34.pn
 ```html
 <link rel="stylesheet" href="slow-loading-stylesheet.css" />
 <script>
-  console.log("I will not run until slow-loading-stylesheet.css is downloaded.");
+  console.log(
+    "I will not run until slow-loading-stylesheet.css is downloaded."
+  );
 </script>
 ```
 
@@ -218,3 +238,9 @@ Messing with the priority queue![](/assets/Screen Shot 2017-11-26 at 19.29.34.pn
 [HTTP2 - what no one is telling you](https://www.youtube.com/watch?v=CkFEoZwWbGQ)
 
 [Using HAR for performance benchmarking](https://blog.201-created.com/you-can-only-change-what-you-can-measure-6be8826503a7)
+
+[Better HTTP/2 Prioritization for a Faster Web](https://blog.cloudflare.com/better-http-2-prioritization-for-a-faster-web/?utm_source=ponyfoo+weekly&utm_medium=email&utm_campaign=behave-nephew-imaginary-field)
+
+![](./images/pipeline-1.png)
+
+As described above, early in the page load cycle before the browser can render any content it is blocked on the CSS and blocking JavaScript in the <head> section of the HTML. During that part of the loading cycle it is best for 100% of the connection bandwidth to be used to download the blocking resources and for them to be downloaded one at a time in the order they are defined in the HTML. That lets the browser parse and execute each item while it is downloading the next blocking resource, allowing the download and execution to be pipelined.

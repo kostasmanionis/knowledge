@@ -9,3 +9,5 @@
 [First practical attempts to penetrate the virgin domain of hardware evolution](https://www.damninteresting.com/on-the-origin-of-circuits/) - The concept is roughly analogous to Charles Darwin’s elegant principle of natural selection, which describes how individuals with the most advantageous traits are more likely to survive and reproduce. This process tends to preserve favorable characteristics by passing them to the survivors’ descendants, while simultaneously suppressing the spread of less-useful traits.
 
 Dr. Thompson dabbled with computer circuits in order to determine whether survival-of-the-fittest principles might provide hints for improved microchip designs.
+
+[A horrifying globalThis polyfill in universal JavaScript](https://mathiasbynens.be/notes/globalthis)

@@ -4,6 +4,9 @@
 
 [Browser rendering path](https://fabianstiehle.com/render-path) - an introduction on how the browser rendering path works.
 
+[Prevent default kills click modifiers](https://remysharp.com/2019/04/04/how-i-failed-the-a)
+
+Stuff like ⌘+click
 ### Firefox
 
 #### **Quantum CSS engine**

@@ -17,6 +17,8 @@ So we do `normalize('NFD').replace(/[\u0300-\u036f]/g, '').indexOf("Cote") > -1;
 
 The replace function takes a range of Unicode points from U+0300 to U+036F, covering any diacritic bytes we might have in the string.
 
+[normalize Unicode strings](https://withblue.ink/2019/03/11/why-you-need-to-normalize-unicode-strings.html?utm_source=ponyfoo+weekly&utm_medium=email&utm_campaign=159)
+
 
 
 

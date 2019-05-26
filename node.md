@@ -13,3 +13,22 @@ Debugging the code in 10.0.0 is super duper easy, now we have trace events that 
 [V8 PERF](https://github.com/thlorenz/v8-perf) - Repo about V8 performance
 
 [Why the New V8 is so Damn Fast](https://nodesource.com/blog/why-the-new-v8-is-so-damn-fast) - Has some great tools about debugging node deoptimizations
+
+#### Starting a new node project
+
+```sh
+npx license mit > LICENSE
+npx gitignore node
+npx covgen YOUR_EMAIL_ADDRESS
+npm init -y
+```
+
+```sh
+git init
+npx license $(npm get init.license) -o "$(npm get init.author.name)" > LICENSE
+npx gitignore node
+npx covgen "$(npm get init.author.email)"
+npm init -y
+git add -A
+git commit -m "Initial commit"
+```

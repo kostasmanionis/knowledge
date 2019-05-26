@@ -4,3 +4,6 @@
 
 How FireFox stylo works
 
+## Layouts
+
+[Masonry layouts](https://css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout/)
