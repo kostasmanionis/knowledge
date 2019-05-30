@@ -1,5 +1,7 @@
 ## Tools
 
+[The impact of third party scripts on the Web](https://www.thirdpartyweb.today/?utm_source=Perf.email&utm_campaign=d6a8899618-EMAIL_CAMPAIGN_2019_05_16_02_32&utm_medium=email&utm_term=0_7cba5dc7bd-d6a8899618-1247075581)
+
 [Google H2 auto push](https://github.com/google/node-h2-auto-push) - This project is for automating server push and getting rid of the need for manual configurations from service developers. It is meant as a helper library for building middlewares for various Node.js web servers, such as Express, fastify, etc.
 
 #### Blackhole servers
