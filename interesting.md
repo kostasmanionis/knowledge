@@ -11,3 +11,5 @@
 Dr. Thompson dabbled with computer circuits in order to determine whether survival-of-the-fittest principles might provide hints for improved microchip designs.
 
 [A horrifying globalThis polyfill in universal JavaScript](https://mathiasbynens.be/notes/globalthis)
+
+[Two experiments—small changes, instantly deployed; and automatically committing code that passes its tests, while deleting what fails—should have gone horribly wrong. They didn’t.](https://increment.com/testing/testing-the-boundaries-of-collaboration/)

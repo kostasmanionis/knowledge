@@ -1,6 +1,6 @@
 ### React Native
 
-* Use primitives that are cross compatible between the web and react native.
+- Use primitives that are cross compatible between the web and react native.
 
 ## React
 
@@ -40,20 +40,28 @@ Even this will rerender
 because it will always recreacte the elements
 
 ```javascript
-React.createElement(NavigationContext.Provider, { value: this.state },
+React.createElement(
+  NavigationContext.Provider,
+  { value: this.state },
   React.createElement(Log, { name: "NavigationProvider" }),
-  React.createElement(AppLayout, null,
+  React.createElement(
+    AppLayout,
+    null,
     React.createElement(Log, { name: "AppLayout" }),
-    React.createElement(Route, { href: "/" },
+    React.createElement(
+      Route,
+      { href: "/" },
       React.createElement(Log, { name: "home Route" }),
-      React.createElement('h1', null, "Welcome to Frontend Armory!")
+      React.createElement("h1", null, "Welcome to Frontend Armory!")
     ),
-    React.createElement(Route, { href: "/browse/" },
+    React.createElement(
+      Route,
+      { href: "/browse/" },
       React.createElement(Log, { name: "browse Route" }),
-      React.createElement('h1', null, "Browse courses and guides")
-    ),
+      React.createElement("h1", null, "Browse courses and guides")
+    )
   )
-)
+);
 ```
 
 But if you move it in separate component like this, they won't
@@ -61,18 +69,18 @@ But if you move it in separate component like this, they won't
 ```javascript
 export class NavigationProvider extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     // Store the `navigation` object in component state
     this.state = {
       pathname: window.location.pathname,
-      navigate: this.navigate,
-    }
+      navigate: this.navigate
+    };
 
     // Handle the user clicking the `back` and `forward` buttons
     window.onpopstate = () => {
-      this.setState({ pathname: window.location.pathname })
-    }
+      this.setState({ pathname: window.location.pathname });
+    };
   }
 
   render() {
@@ -80,16 +88,36 @@ export class NavigationProvider extends React.Component {
       <NavigationContext.Provider value={this.state}>
         {this.props.children}
       </NavigationContext.Provider>
-    )
+    );
   }
 
   // The navigation's `navigate` method updates `navigation` object, and uses
   // the browser's `pushState` method to change the window's URL.
-  navigate = (pathname) => {
-    this.setState({ pathname })
+  navigate = pathname => {
+    this.setState({ pathname });
 
     // Update the URL within the browser's history
-    window.history.pushState(null, null, pathname)
-  }
+    window.history.pushState(null, null, pathname);
+  };
 }
 ```
+
+[State Reducer Pattern with React Hooks](https://kentcdodds.com/blog/the-state-reducer-pattern-with-react-hooks)
+
+```jsx
+function useToggle({ reducer = (s, a) => a.changes } = {}) {
+  const [{ on }, dispatch] = React.useReducer(
+    (state, action) => {
+      const changes = toggleReducer(state, action);
+      return reducer(state, { ...action, changes });
+    },
+    { on: false }
+  );
+  const toggle = () => dispatch({ type: useToggle.types.toggle });
+  const setOn = () => dispatch({ type: useToggle.types.on });
+  const setOff = () => dispatch({ type: useToggle.types.off });
+  return { on, toggle, setOn, setOff };
+}
+```
+
+[Dancing between state and effects - a real-world use case](https://github.com/facebook/react/issues/15240)

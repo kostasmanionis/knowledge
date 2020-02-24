@@ -140,30 +140,33 @@ const stringValidator = target => {
   const { descriptor } = target;
   const value = descriptor.initializer();
 
-  const proxy = new Proxy({}, {
-    set(proxyTarget, key, proxyValue) {
-      if (typeof proxyValue !== 'string') {
-        throw new TypeError('value must be a string');
-      }
+  const proxy = new Proxy(
+    {},
+    {
+      set(proxyTarget, key, proxyValue) {
+        if (typeof proxyValue !== "string") {
+          throw new TypeError("value must be a string");
+        }
 
-      return true;
+        return true;
+      }
     }
-  })
+  );
 
   const initializer = () => {
     proxy[name] = value;
     return proxy[name];
-  }
+  };
 
   return {
     ...target,
     initializer
-  }
-}
+  };
+};
 
 class Book {
   @stringValidator
-  bookOne = 'The Trial'; // all fine
+  bookOne = "The Trial"; // all fine
 
   @stringValidator
   bookTwo = 1984; // throws a TypeError
@@ -174,9 +177,11 @@ class Book {
 
 However, there’s a number of implementation difficulties and edge cases that complicate this:
 
- - How do you compare objects with circular references?
- - If objects have identical properties, but different prototypes, are they equal?
- - How should get/set properties be handled?
- - Should objects compare their non-enumerable properties?
- - Keys in an object are ordered — i.e. Object.keys({ x: 1, y: 2 }) gives different results than Object.keys({ y: 2, x: 1 }) -- should that matter for structural equality?
- - How should you handle private properties, or methods that use closures to simulate this?
+- How do you compare objects with circular references?
+- If objects have identical properties, but different prototypes, are they equal?
+- How should get/set properties be handled?
+- Should objects compare their non-enumerable properties?
+- Keys in an object are ordered — i.e. Object.keys({ x: 1, y: 2 }) gives different results than Object.keys({ y: 2, x: 1 }) -- should that matter for structural equality?
+- How should you handle private properties, or methods that use closures to simulate this?
+
+[Generators and Iterators](https://jfet97.github.io/JavaScript-Iterators-and-Generators/)

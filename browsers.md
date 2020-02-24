@@ -49,5 +49,8 @@ In WebKit and Blink, the style sharing cache would give up in these cases and no
 
 In Quantum CSS, we gather up all of those weird selectors and check whether they apply to the DOM node. Then we store the answers as ones and zeros. If the two elements have the same ones and zeros, we know they definitely match.
 
+# APIs
 
-
+```js
+'hello world'.bold().italics().link('http://localhost') // <a href="http://localhost"><i><b>hello world</b></i></a>
+```

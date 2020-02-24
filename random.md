@@ -72,3 +72,20 @@ This directory should be used for storing system-wide configuration files that c
 If $XDG_DATA_DIRS is either not set or empty, a value equal to /usr/local/share/:/usr/share/ should be used.
 
 Example: storing plugins or themes that can be used by all users of your program. This directory would most likely be populated during the installation process.
+
+#### Reliability
+> In God we trust, all others must bring e2e tests.
+
+> The flakiness of your integration tests is a lower bound for the flakiness of your user experience.
+
+I recently learned about Hyrum's Law, which states:
+
+> With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors of your system will be depended on by somebody.
+
+[XKCD](https://xkcd.com/1172/)
+
+Kevin Mahoney has provided a new neat mathematical illustration of the availability problem of inter-connecting services:
+
+Take the example where service C depends on services A and B[…]
+
+> If A has an availability of 0.8 (80%) and B 0.95 (95%), C will have a best case of 0.8 (80%), an average case of 0.8 × 0.95 = 0.76 (76%), and a worst case of 1 - ((1 - 0.8) + (1 - 0.95)) = 0.75 (75%)

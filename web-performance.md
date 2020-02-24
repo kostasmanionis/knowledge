@@ -1,5 +1,7 @@
 ## Tools
 
+[Undertstanding WebPageTest chart](https://nooshu.github.io/blog/2019/10/02/how-to-read-a-wpt-waterfall-chart/?utm_source=Perf.email&utm_campaign=d0b3f1b8fb-EMAIL_CAMPAIGN_2019_10_06_09_08&utm_medium=email&utm_term=0_7cba5dc7bd-d0b3f1b8fb-1247075581)
+
 [The impact of third party scripts on the Web](https://www.thirdpartyweb.today/?utm_source=Perf.email&utm_campaign=d6a8899618-EMAIL_CAMPAIGN_2019_05_16_02_32&utm_medium=email&utm_term=0_7cba5dc7bd-d6a8899618-1247075581)
 
 [Google H2 auto push](https://github.com/google/node-h2-auto-push) - This project is for automating server push and getting rid of the need for manual configurations from service developers. It is meant as a helper library for building middlewares for various Node.js web servers, such as Express, fastify, etc.
@@ -39,6 +41,8 @@ A blackhole server can be used to route third party traffic through an endpoint 
 [Use `this.Reflektive` to feature detect 2015](https://itnext.io/a-bloatless-web-d4f811c7991b)
 
 [Skeleton screens](https://medium.com/@owencm/reactive-web-design-the-secret-to-building-web-apps-that-feel-amazing-b5cbfe9b7c50) - skeleton screens ensure that whenever the user taps any button or link, the page reacts immediately by transitioning the user to that new page and then \_loading in content to that page \_as the content becomes available.
+
+[Measuring Interactivity with TTI: Time To (consistently) Interactive](https://blog.dareboost.com/en/2019/05/measuring-interactivity-time-to-interactive/)
 
 #### Perceived performance
 
@@ -145,6 +149,10 @@ Sending data in a comment might be the fastest way to do it, need to benchmark p
 
 [A step by step guide to monitoring the competition with the Chrome UX Report](https://dev.to/rick_viscomi/a-step-by-step-guide-to-monitoring-the-competition-with-the-chrome-ux-report-4k1o)
 
+[Layout instability API](https://web.dev/layout-instability-api/)
+
+[How Google Pagespeed works: Improve Your Score and Search Engine Ranking](https://calibreapp.com/blog/how-pagespeed-works/)
+
 ## Browsers
 
 [Fastdom - Batch dom read/writes](https://github.com/wilsonpage/fastdom)
@@ -157,9 +165,16 @@ Sending data in a comment might be the fastest way to do it, need to benchmark p
 
 [Resource timing](https://nicj.net/resourcetiming-in-practice)
 
+[Code caching for JavaScript developers](https://v8.dev/blog/code-caching-for-devs)
+
+Use `chrome://tracing`
+Look for `v8.compile` or `v8.compileModule`.
+
+`cacheProduceOptions`, `producedCacheSize`, `cacheConsumeOptions`, `consumedCacheSize`
+
 ### Hacks
 
-Messing with the priority queue![](/assets/Screen Shot 2017-11-26 at 19.29.34.png)
+![Messing with the priority queue](/assets/Screen Shot 2017-11-26 at 19.29.34.png)
 
 ### Chrome
 
@@ -235,6 +250,8 @@ Messing with the priority queue![](/assets/Screen Shot 2017-11-26 at 19.29.34.pn
 
 ## Networking
 
+[Server timing API](https://medium.com/bbc-design-engineering/server-timing-in-the-wild-bfb34816322e)
+
 [Use the network information api to figure out what kind of an connection the user has](https://googlechrome.github.io/samples/network-information/)
 
 [HTTP2 - what no one is telling you](https://www.youtube.com/watch?v=CkFEoZwWbGQ)
@@ -246,3 +263,12 @@ Messing with the priority queue![](/assets/Screen Shot 2017-11-26 at 19.29.34.pn
 ![](./images/pipeline-1.png)
 
 As described above, early in the page load cycle before the browser can render any content it is blocked on the CSS and blocking JavaScript in the <head> section of the HTML. During that part of the loading cycle it is best for 100% of the connection bandwidth to be used to download the blocking resources and for them to be downloaded one at a time in the order they are defined in the HTML. That lets the browser parse and execute each item while it is downloading the next blocking resource, allowing the download and execution to be pipelined.
+
+## Service workers
+
+[Bringing service workers to Google Search](https://web.dev/google-search-sw/)
+[Using service workers to cache a part of the html](https://philipwalton.com/articles/smaller-html-payloads-with-service-workers/)
+
+### Tracking statistics
+
+[How a decrease in bundle size increased the response times](https://blog.chriszacharias.com/page-weight-matters)

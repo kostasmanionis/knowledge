@@ -14,8 +14,12 @@
 
 [Rage Against the Codebase: Programmers and Negativity](https://medium.com/@way/rage-against-the-codebase-programmers-and-negativity-d7d6b968e5f3)
 
+[You Need Better Senior Software Developers](https://medium.com/swlh/you-need-better-senior-software-developers-4c762950fe1?sk=2c1cd5525065880a2953189611fed62f)
+
 ### General
 
 [Towards an understanding of technical debt](https://kellanem.com/notes/towards-an-understanding-of-technical-debt)
 
 [The technical debth myth](https://www.helpscout.com/blog/technical-debt/?utm_source=ponyfoo+weekly&utm_medium=email&utm_campaign=163)
+
+[Overthinking](https://zenhabits.net/overthink/)
